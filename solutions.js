@@ -37,6 +37,29 @@ function change(c) {
  }
 
 
-var testArray = [118,117,120,121,117,98,'c',97,120,106,104,116,113,114,113,120,106];
+var testArray = [101,121,110,113,113,103,121,121,101,107,103];
 
 isVow(testArray);
+
+//positive-negative
+var pnArray = [];
+
+function countPositivesSumNegatives(input) {
+
+  var pos = 0;
+  var neg = 0;
+  for (var i = 0; i <= input.length; i++) {
+    if (input[i] > 0) {
+    pos++;
+   } else if (input[i] < 0) {
+     neg += input[i];
+     }
+    }
+    pnArray.push(pos);
+    pnArray.push(neg);
+    console.log(pnArray);
+}
+
+var testData = [0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14];
+
+countPositivesSumNegatives(testData);
