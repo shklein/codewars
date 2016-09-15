@@ -63,3 +63,14 @@ function countPositivesSumNegatives(input) {
 var testData = [0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14];
 
 countPositivesSumNegatives(testData);
+
+//syntax errors
+function myFirstKata(a, b) {
+  if (typeof(a) != "number" || typeof(b) != "number") {
+    console.log(false);
+  } else {
+    console.log((a % b) + (b % a));
+  }
+}
+
+myFirstKata(3,5);
