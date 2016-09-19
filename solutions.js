@@ -74,3 +74,28 @@ function myFirstKata(a, b) {
 }
 
 myFirstKata(3,5);
+
+//sum highest/lowest
+
+function sumArray(array) {
+
+  function sortNumber(a,b) {
+    return a - b;
+  }
+
+array.sort(sortNumber);
+
+array.pop();
+array.shift();
+
+function getSum(total, num) {
+  return total + num;
+  }
+  var sum = array.reduce(getSum);
+
+  console.log(sum);
+}
+
+var testArray = [ 6, 2, 1, 8, 10 ];
+
+sumArray(testArray);
